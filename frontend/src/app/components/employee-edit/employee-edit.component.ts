@@ -51,10 +51,10 @@ export class EmployeeEditComponent implements OnInit {
   getEmployee(id) {
     this.apiService.getEmployee(id).subscribe(data => {
       this.editForm.setValue({
-        name: data['name'],
-        email: data['email'],
-        designation: data['designation'],
-        phoneNumber: data['phoneNumber'],
+        name: data[0].name,
+        email: data[0].email,
+        designation: data[0].designation,
+        phoneNumber: data[0].phoneNumber,
       });
     });
   }
