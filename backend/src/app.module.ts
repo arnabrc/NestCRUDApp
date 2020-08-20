@@ -16,6 +16,7 @@ import { HttpExceptionFilter } from './filters/http-exception.filter';
       collection: 'employees'
     }]),
     MongooseModule.forRoot("mongodb://localhost:27017/employeenesttutorial")
+    // MongooseModule.forRoot("mongodb+srv://ArnabRC:A_RC@kol-90@cluster0.oguj3.mongodb.net/employeenesttutorial?retryWrites=true&w=majority")
   ],
   controllers: [
     AppController, 
